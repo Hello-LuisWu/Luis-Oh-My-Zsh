@@ -118,3 +118,31 @@ sudo pacman -Sy git
 7. 恭喜你，如无意外，Oh My Zsh 就安装好了
 
 ## Oh My Zsh 配置
+
+### 安装 zsh 高亮插件
+
+```
+git clone https://gitee.com/hello-luiswu/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+### 安装 zsh 命令补全插件
+
+```
+git clone https://gitee.com/hello-luiswu/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+### 启用插件
+
+1. 执行 `vim ~/.zshrc` 命令（前提是你安装了 vim），打开zsh的配置文件文件 
+
+找到以下内容：
+
+```
+plugins=(git)
+```
+
+替换一下内容：
+
+```
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+```
