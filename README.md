@@ -135,13 +135,13 @@ git clone https://gitee.com/hello-luiswu/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh
 
 1. 执行 `vim ~/.zshrc` 命令（前提是你安装了 vim），打开zsh的配置文件文件 
 
-找到以下内容：
+**找到以下内容：**
 
 ```
 plugins=(git)
 ```
 
-替换一下内容：
+**替换以下内容：**
 
 ```
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
