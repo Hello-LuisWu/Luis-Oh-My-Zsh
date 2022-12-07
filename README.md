@@ -29,6 +29,8 @@ Arch (manjaro) 安装 zsh
 sudo pacman -Sy zsh
 ```
 
+---
+
 ## zsh 设置
 
 ### 查看系统已有的 shell
@@ -78,6 +80,30 @@ echo $SHELL
 ```
 
 以上输出结果可以看到，默认的 shell 已经变成了 zsh 
+
+---
+
+## 安装 git 
+
+安装 OhMyZsh 的过程中会从 Github 克隆 OhMyZsh 相关文件，所以必须安装 git
+
+### macOS
+
+``` sh
+brew install git
+```
+
+### Ubuntu
+
+``` sh
+sudo apt-get -y install git
+```
+
+### Arch(Manjaro)
+
+``` sh
+sudo pacman -Sy git
+```
 
 ---
 
