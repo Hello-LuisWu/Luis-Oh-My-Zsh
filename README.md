@@ -117,8 +117,8 @@ sudo pacman -Sy git
 2. 点击 `code` 选项卡 [快捷按钮](https://github.com/ohmyzsh/ohmyzsh)
 3. 点击右边的 `code` 绿色按钮,在下拉菜单中点击 `Download ZIP`, 来下载 Oh My Zsh 安装文件 [快捷按钮](https://github.com/ohmyzsh/ohmyzsh/archive/refs/heads/master.zip)，建议下载到 `~/Downloads` 目录下。下载好的文件名为 ohmyzsh-master.zip
 4. 到下好的文件所在目录，执行 `unzip ohmyzsh-master.zip` 将文件解压，解压后得到 ohmyzsh-master 的目录
-5. 执行 `cd ohmyzsh-master/tool` 进入 tool 目录
-6. tool 目录里 有一个 install.sh 的 shell 脚本文件，这是 Oh My Zsh 的安装脚本。通过 `./install.sh` 来执行 install.sh 文件，进行 Oh My Zsh 的安装
+5. 执行 `cd ohmyzsh-master/tools` 进入 tools 目录
+6. tools 目录里 有一个 install.sh 的 shell 脚本文件，这是 Oh My Zsh 的安装脚本。通过 `./install.sh` 来执行 install.sh 文件，进行 Oh My Zsh 的安装
 7. 恭喜你，如无意外，Oh My Zsh 就已经安装好了
 
 ## Oh My Zsh 配置
