@@ -17,7 +17,7 @@ Allright! OhMyZsh installed finish!! so good!!!
 ## 安装 zsh
 
 ### macOS 安装 zsh
-``` sh
+```sh
 brew install zsh
 ```
 
@@ -93,26 +93,37 @@ echo $SHELL
 
 ### macOS
 
-``` sh
+```sh
 brew install git
 ```
 
 ### Ubuntu
 
-``` sh
+```sh
 sudo apt-get -y install git
 ```
 
 ### Arch(Manjaro)
 
-``` sh
+```sh
 sudo pacman -Sy git
 ```
 
 ---
 
-## 安装 Oh My Zsh
+## Github 无法访问
 
+**解决raw.githubusercontent.com无法访问:** 
+
+```sh
+sudo sh -c 'echo "185.199.108.133 raw.githubusercontent.com" >> /etc/hosts'
+```
+
+
+---
+
+## 安装 Oh My Zsh
+### 下载到本地安装
 1. 到 Oh My Zsh 的 Github 页面 [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 2. 点击 `code` 选项卡 [快捷按钮](https://github.com/ohmyzsh/ohmyzsh)
 3. 点击右边的 `code` 绿色按钮,在下拉菜单中点击 `Download ZIP`, 来下载 Oh My Zsh 安装文件 [快捷按钮](https://github.com/ohmyzsh/ohmyzsh/archive/refs/heads/master.zip)，建议下载到 `~/Downloads` 目录下。下载好的文件名为 ohmyzsh-master.zip
@@ -121,12 +132,13 @@ sudo pacman -Sy git
 6. tools 目录里 有一个 install.sh 的 shell 脚本文件，这是 Oh My Zsh 的安装脚本。通过 `./install.sh` 来执行 install.sh 文件，进行 Oh My Zsh 的安装
 7. 恭喜你，如无意外，Oh My Zsh 就已经安装好了
 
-**或直接命令安插：**
-``` sh
-# curl
+### 命令直接安装
+
+```sh
+# 用 curl 安装
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# wget
+# 或者用 wget 安装
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
@@ -154,7 +166,7 @@ git clone https://gitee.com/hello-luiswu/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh
 plugins=(git)
 ```
 
-**替换以下内容：**
+**替换成以下内容：**
 
 ```
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
