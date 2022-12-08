@@ -121,6 +121,15 @@ sudo pacman -Sy git
 6. tools 目录里 有一个 install.sh 的 shell 脚本文件，这是 Oh My Zsh 的安装脚本。通过 `./install.sh` 来执行 install.sh 文件，进行 Oh My Zsh 的安装
 7. 恭喜你，如无意外，Oh My Zsh 就已经安装好了
 
+**或直接命令安插：**
+``` sh
+# curl
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# wget
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 ## Oh My Zsh 配置
 
 ### 安装 zsh 高亮插件
